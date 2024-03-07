@@ -1,0 +1,187 @@
+    /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+background: rgb(140, 69, 255);
+    background: linear-gradient(0deg, rgba(140, 69, 255, 1) 0%, rgba(52, 2, 71, 1) 100%);    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+/* .navbar{
+    background: rgb(140, 69, 255);
+} */
+    .carousel-item {
+        position: relative;
+        overflow: hidden;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .glass {
+        background: linear-gradient(135deg,
+                rgba(255, 255, 255, 0.1),
+                rgba(255, 255, 255, 0));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+
+    .carousel-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.3);
+        /* Adjust the background color and opacity as needed */
+        opacity: 0;
+    }
+
+    .carousel-item:hover::before {
+        opacity: 1;
+    }
+
+    /* Optional: Adjust the scale or other styles on hover */
+    .carousel-item:hover img {
+        transform: scale(1.05);
+        /* Adjust the scale as needed */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar {
+        position: fixed;
+    }
+
+    .carousel-item {
+        background-attachment: fixed;
+    }
+
+    .carousel-inner img {
+        width: 85%;
+        height: 500px;
+        /* Set the desired height */
+        object-fit: cover;
+
+        opacity: 1;
+        /* Add a transparency effect for image browsers */
+        filter: alpha(opacity=100);
+        /* Ensure the image covers the entire space */
+        border-radius: 15px;
+        /* Add rounded corners */
+    }
+
+    /* body {
+                background: rgb(140, 69, 255);
+                background: linear-gradient(0deg, rgba(140, 69, 255, 1) 0%, rgba(52, 2, 71, 1) 100%);
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+            } */
+
+    .glass {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+
+    /* .carousel-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.3);
+            opacity: 0;
+        }
+
+        .carousel-item:hover::before {
+            opacity: 1;
+        }
+
+        .carousel-item:hover img {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .navbar {
+            position: fixed;
+        }
+
+        .carousel-item {
+            background-attachment: fixed;
+        }
+
+        .carousel-inner img {
+            width: 85%;
+            height: 500px;
+            object-fit: cover;
+            opacity: 1;
+            filter: alpha(opacity=100);
+            border-radius: 15px;
+        } */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    color: #fff;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+} 
+ .DivDesc {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+  }
+
+  .DivImage {
+      width: 300px;
+      height: 200px;
+  }
+
+  .DivImage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .DivText {
+      width: 80%;
+      /* Adjust the width as needed */
+      text-align: center;
+  }
+
+  .DivText h3 {
+      font-size: 20px;
+      font-weight: 600;
+  }
+
+  .DivText p {
+      font-size: 15px;
+      font-weight: 400;
+  }

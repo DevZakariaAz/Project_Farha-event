@@ -1,0 +1,55 @@
+style.css
+
+/* body {
+    background-color: #f8f9fa;
+    color: #495057;
+} */
+
+/* .container {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 20px;
+} */
+
+h1 {
+    color: #007bff;
+}
+
+.DivDesc {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.DivImage {
+    flex: 0 0 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.DivImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.DivText {
+    flex: 1;
+    text-align: left;
+}
+
+.DivText p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+
+
+
+.alert-warning {
+    background-color: #ffc107;
+    color: #856404;
+}
